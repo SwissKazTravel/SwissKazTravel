@@ -1,9 +1,15 @@
-export default function Home() {
+import Image from "next/image";
+
+export default function Page() {
   return (
-    <main style={{ textAlign: 'center', marginTop: '50px' }}>
-      <img src="/logo.png" alt="SwissKaz Travel Logo" width="250" />
-      <h1>Welcome to SwissKaz Travel</h1>
-      <p>DISCOVER THE UNDISCOVERED</p>
+    <main>
+      <h1>SwissKaz Travel</h1>
+      <Image
+        src="/logo.png"
+        alt="SwissKaz Travel Logo"
+        width={200}
+        height={200}
+      />
     </main>
   );
 }
